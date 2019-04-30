@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPanelMain" disable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jumpingpegsiii.JumpingPegsController">
+  <children>
+    <ImageView fx:id="imgViewBackground" disable="false" fitHeight="720.0" fitWidth="1280.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../../../Desktop/bkgd01.jpg" />
+      </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+    </ImageView>
+    <Label id="labelTitle" layoutX="412.0" layoutY="23.0" text="The Jumping Pegs Game">
+      <font>
+        <Font name="MingLiU_HKSCS-ExtB" size="40.0" />
+      </font>
+    </Label>
+    <Button id="buttonMove" fx:id="ButtonMove" layoutX="582.0" layoutY="647.0" mnemonicParsing="false" onAction="#initialize" prefHeight="41.0" prefWidth="90.0" text="Move" />
+    <TextField id="textFieldSwaps" fx:id="TextFieldSwaps" layoutX="1004.0" layoutY="103.0" prefWidth="200.0" />
+    <TextField id="textFieldMovingNow" fx:id="textFieldMoveNow" layoutX="52.0" layoutY="657.0" prefWidth="200.0" />
+    <TextField id="textFieldMsg" fx:id="textFieldSystemMsg" layoutX="772.0" layoutY="656.0" prefWidth="460.0" />
+    <Label fx:id="labelSwaps" layoutX="923.0" layoutY="106.0" prefWidth="59.0" text="Swaps" />
+    <Label id="labelMoving" fx:id="labelMovingNow" layoutX="52.0" layoutY="639.0" text="Moving Now" textFill="WHITE" />
+    <Label fx:id="labelSystemMsg" layoutX="772.0" layoutY="639.0" text="System Message" textFill="WHITE" />
+    <HBox fx:id="hboxPegBoard" layoutX="7.0" layoutY="427.0" prefHeight="191.0" prefWidth="1273.0">
+      <children>
+        <ImageView id="imgViewB07" fx:id="imageView1" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB01" fx:id="imageView2" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" x="5.0">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB09" fx:id="imageView3" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB11" fx:id="imageView4" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB13" fx:id="imageView5" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB02" fx:id="imageView6" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB08" fx:id="imageView7" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car2.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB12" fx:id="imageView8" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView id="imgViewB06" fx:id="imageView9" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB14" fx:id="imageView10" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB10" fx:id="imageView11" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB05" fx:id="imageView12" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB04" fx:id="imageView13" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+        <ImageView id="imgViewB03" fx:id="imageView14" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../JumpingPegs/img/car1.jpg" />
+               </image></ImageView>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
